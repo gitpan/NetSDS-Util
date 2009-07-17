@@ -1,6 +1,6 @@
 ---
 name: NetSDS-Util
-version: 1.02
+version: 1.03
 author:
   - 'Net.Style Development Team <info@netstyle.com.ua>'
 abstract: Utility Perl5 modules for NetSDS VAS development framework
@@ -8,7 +8,15 @@ license: gpl
 resources:
   license: http://opensource.org/licenses/gpl-license.php
 requires:
+  Encode: 0
+  File::Copy: 0
+  File::Path: 0
+  File::Spec: 0
+  MIME::Base64: 0
   NetSDS: 1.02
+  POSIX: 0
+  URI: 1.00
+  URI::Escape: 1.00
   perl: 5.008
   version: 0
 build_requires:
@@ -20,6 +28,9 @@ provides:
   NetSDS::Util::Convert:
     file: lib/NetSDS/Util/Convert.pm
     version: 1.00
+  NetSDS::Util::File:
+    file: lib/NetSDS/Util/File.pm
+    version: 1.0
   NetSDS::Util::String:
     file: lib/NetSDS/Util/String.pm
     version: 0.01

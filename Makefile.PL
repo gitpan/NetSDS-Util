@@ -9,12 +9,20 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/NetSDS/Util.pm',
           'PREREQ_PM' => {
-                           'Test::More' => '0',
+                           'File::Copy' => '0',
+                           'URI' => '1.00',
                            'Test::Pod::Coverage' => '0',
+                           'URI::Escape' => '1.00',
                            'version' => '0',
+                           'File::Spec' => '0',
                            'NetSDS' => '1.02',
-                           'Module::Build' => '0',
-                           'Test::Pod' => '0'
+                           'Test::Pod' => '0',
+                           'Encode' => '0',
+                           'Test::More' => '0',
+                           'POSIX' => '0',
+                           'MIME::Base64' => '0',
+                           'File::Path' => '0',
+                           'Module::Build' => '0'
                          }
         )
 ;
