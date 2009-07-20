@@ -45,8 +45,8 @@ use File::Copy;
 use File::Path;
 use base 'Exporter';
 
-use version; our $VERSION = "1.0";
-our @EXPORT_OK = qw(
+use version; our $VERSION = "1.04";
+our @EXPORT = qw(
   is_handle
   reset_handle
   file_open

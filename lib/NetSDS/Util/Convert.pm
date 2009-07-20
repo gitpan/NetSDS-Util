@@ -45,7 +45,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.00';
+use version; our $VERSION = '1.04';
 
 our @EXPORT = qw(
   conv_str_bcd

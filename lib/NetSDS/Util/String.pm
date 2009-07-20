@@ -23,7 +23,7 @@ NetSDS::Util::String - string prcessing routines
 	my $string = <STDIN>;
 
 	# Encode string to internal structure
-	$string = text_encode($tring);
+	$string = string_encode($tring);
 
 
 =head1 DESCRIPTION
@@ -43,18 +43,20 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '0.01';
+use version; our $VERSION = '1.00';
 
 use NetSDS::Const;
 
-our @EXPORT_OK = qw(
+our @EXPORT = qw(
   str_encode
   str_decode
   str_recode
   str_trim
-  str_trim_leftl
+  str_trim_left
   str_trim_right
   str_clean
+  str_camelize
+  str_decamelize
 );
 
 use POSIX;
@@ -262,6 +264,60 @@ sub str_clean {
 	}
 
 	return $txt;
+}
+
+#**************************************************************************
+
+=item B<str_camelize($strin)>
+
+If pass undef - return undef.
+If pass '' - return ''.
+
+Examples:
+
+	# returns 'getValue'
+	str_camelize( 'get_value' )
+
+	# returns 'addUserAction'
+	str_camelize( 'ADD_User_actION' )
+
+=cut
+
+#-----------------------------------------------------------------------
+sub str_camelize {
+
+	my $s = shift;
+
+	if ( defined($s) and ( $s ne '' ) ) {
+		$s = lc($s);
+		$s =~ s/_([0-9a-z])/\U$1/g;
+	}
+
+	return $s;
+}
+
+#**************************************************************************
+
+=item B<str_decamelize(...)>
+
+If pass undef - return undef.
+If pass '' - return ''.
+
+Examples:
+
+	# returns 'get_value'
+	str_decamelize( 'getValue' )
+
+=cut
+
+#-----------------------------------------------------------------------
+sub str_decamelize {
+
+	my $s = shift;
+
+	$s =~ s/([A-Z])/_\L$1/g;
+
+	return lc($s);
 }
 
 1;

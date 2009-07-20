@@ -1,0 +1,13 @@
+TODO: 
+- import XML processing routines
+
+* Mon Jul 20 2009 Michael Bochkaryov <misha@altlinux.ru> 1.04
+- imported all routines from older versions
+
+* Fri Jul 17 2009 Michael Bochkaryov <misha@altlinux.ru> 1.03
+- file processing utilities added
+
+* Tue Jul 14 2009 Michael Bochkaryov <misha@altlinux.ru> 1.02
+- initial import from perl-NetSDS-common
+- string processing routines
+- data formats conversions (HEX, Base64, URI encoding)

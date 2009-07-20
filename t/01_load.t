@@ -13,14 +13,16 @@
 use strict;
 use warnings;
 
-use Test::More tests => 2;                      # last test to print
+use Test::More tests => 8;                      # last test to print
 
 BEGIN {
 	use_ok('NetSDS::Util::Convert');
+	use_ok('NetSDS::Util::DateTime');
 	use_ok('NetSDS::Util::File');
+	use_ok('NetSDS::Util::Misc');
 	use_ok('NetSDS::Util::String');
-	#use_ok('NetSDS::Util::Misc');
-	#use_ok('NetSDS::Util::DateTime');
-	#use_ok('NetSDS::Util::Struct');
+	use_ok('NetSDS::Util::Struct');
+	use_ok('NetSDS::Util::Translit');
+	use_ok('NetSDS::Util::Types');
 }
 
