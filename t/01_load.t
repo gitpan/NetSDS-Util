@@ -13,9 +13,10 @@
 use strict;
 use warnings;
 
-use Test::More tests => 8;                      # last test to print
+use Test::More tests => 9;                      # last test to print
 
 BEGIN {
+	use_ok('NetSDS::Util');
 	use_ok('NetSDS::Util::Convert');
 	use_ok('NetSDS::Util::DateTime');
 	use_ok('NetSDS::Util::File');

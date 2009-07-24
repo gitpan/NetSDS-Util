@@ -7,7 +7,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.0
+#      VERSION:  1.040
 #      CREATED:  17.08.2008 17:01:48 EEST
 #===============================================================================
 
@@ -45,7 +45,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.04';
+use version; our $VERSION = '1.040';
 
 our @EXPORT = qw(
   conv_str_bcd
@@ -162,7 +162,7 @@ sub conv_str_base64 {
 
 	my ($str) = @_;
 
-	return encode_base64($str);
+	return encode_base64($str, "");
 
 }
 

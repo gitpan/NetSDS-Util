@@ -2,7 +2,6 @@ package NetSDS::Util::Struct;
 ########################################################################
 # Misc Struct routines
 #
-# $Id$
 ########################################################################
 
 =head1 NAME
@@ -30,7 +29,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = "0.2";
+use version; our $VERSION = "1.040";
 
 our @EXPORT = qw(
   dump_to_string
@@ -52,9 +51,6 @@ use Scalar::Util qw(
 =head1 EXPORTED METHODS
 
 =over
-
-
-#***********************************************************************
 
 =item B<dump_to_string(...)>
 

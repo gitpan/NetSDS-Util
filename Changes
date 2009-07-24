@@ -1,6 +1,11 @@
 TODO: 
 - import XML processing routines
 
+* Fri Jul 24 2009 Michael Bochkaryov <misha@altlinux.ru> 1.040
+- changed version to be compatible with ALT Linux autoprovides
+- drop Base64 strings separation into lines
+- added NetSDS::Util module (stubber yet)
+
 * Mon Jul 20 2009 Michael Bochkaryov <misha@altlinux.ru> 1.04
 - imported all routines from older versions
 

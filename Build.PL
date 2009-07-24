@@ -23,8 +23,6 @@ use Module::Build;
 
 my $build = Module::Build->new(
 	module_name        => 'NetSDS::Util',
-	dist_name          => 'NetSDS-Util',
-	dist_version       => '1.04',
 	dist_abstract      => 'Utility Perl5 modules for NetSDS VAS development framework',
 	create_makefile_pl => 'traditional',
 	dist_author        => 'Net.Style Development Team <info@netstyle.com.ua>',
@@ -39,13 +37,13 @@ my $build = Module::Build->new(
 	requires => {
 		'perl'          => '5.008',
 		'version'       => '0',
-		'NetSDS'        => '1.02',
-		'NetSDS::Const' => '0',
+		'NetSDS'        => '1.020',
+		'NetSDS::Const' => '1.020',
 		'Data::UUID'    => '0',
 		'Date::Format'  => '0',
 		'Date::Parse'   => '0',
 		'Getopt::Long'  => '0',
-		'Encode'        => '0',
+		'Encode'        => '2.000',
 		'File::Copy'    => '0',
 		'File::Path'    => '0',
 		'File::Spec'    => '0',

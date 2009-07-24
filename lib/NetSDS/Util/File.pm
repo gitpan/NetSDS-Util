@@ -6,7 +6,7 @@
 #
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.0
+#      VERSION:  1.040
 #      CREATED:  16.07.2008 18:25:48 EEST
 #===============================================================================
 
@@ -45,7 +45,7 @@ use File::Copy;
 use File::Path;
 use base 'Exporter';
 
-use version; our $VERSION = "1.04";
+use version; our $VERSION = "1.040";
 our @EXPORT = qw(
   is_handle
   reset_handle

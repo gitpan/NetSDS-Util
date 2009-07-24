@@ -1,6 +1,6 @@
 ---
 name: NetSDS-Util
-version: 1.04
+version: 1.040
 author:
   - 'Net.Style Development Team <info@netstyle.com.ua>'
 abstract: Utility Perl5 modules for NetSDS VAS development framework
@@ -11,7 +11,7 @@ requires:
   Data::UUID: 0
   Date::Format: 0
   Date::Parse: 0
-  Encode: 0
+  Encode: 2.000
   File::Copy: 0
   File::Path: 0
   File::Spec: 0
@@ -19,8 +19,8 @@ requires:
   HTTP::Date: 0
   IO::File: 0
   MIME::Base64: 0
-  NetSDS: 1.02
-  NetSDS::Const: 0
+  NetSDS: 1.020
+  NetSDS::Const: 1.020
   POSIX: 0
   Pod::Usage: 0
   Scalar::Util: 0
@@ -36,30 +36,33 @@ build_requires:
   Test::Pod: 0
   Test::Pod::Coverage: 0
 provides:
+  NetSDS::Util:
+    file: lib/NetSDS/Util.pm
+    version: 1.040
   NetSDS::Util::Convert:
     file: lib/NetSDS/Util/Convert.pm
-    version: 1.04
+    version: 1.040
   NetSDS::Util::DateTime:
     file: lib/NetSDS/Util/DateTime.pm
-    version: 1.00
+    version: 1.040
   NetSDS::Util::File:
     file: lib/NetSDS/Util/File.pm
-    version: 1.04
+    version: 1.040
   NetSDS::Util::Misc:
     file: lib/NetSDS/Util/Misc.pm
-    version: 0.10
+    version: 1.040
   NetSDS::Util::String:
     file: lib/NetSDS/Util/String.pm
-    version: 1.00
+    version: 1.040
   NetSDS::Util::Struct:
     file: lib/NetSDS/Util/Struct.pm
-    version: 0.2
+    version: 1.040
   NetSDS::Util::Translit:
     file: lib/NetSDS/Util/Translit.pm
-    version: 0.01
+    version: 1.040
   NetSDS::Util::Types:
     file: lib/NetSDS/Util/Types.pm
-    version: 1.00
+    version: 1.040
 generated_by: Module::Build version 0.3
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
