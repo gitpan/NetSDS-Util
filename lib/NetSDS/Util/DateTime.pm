@@ -6,7 +6,7 @@
 #
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.040
+#      VERSION:  1.041
 #      CREATED:  25.04.2008 15:55:01 EEST
 #===============================================================================
 
@@ -34,7 +34,7 @@ use warnings;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.040';
+use version; our $VERSION = '1.041';
 
 our @EXPORT = qw(
   date_now_array

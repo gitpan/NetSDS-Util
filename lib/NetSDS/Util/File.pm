@@ -6,7 +6,7 @@
 #
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.040
+#      VERSION:  1.041
 #      CREATED:  16.07.2008 18:25:48 EEST
 #===============================================================================
 
@@ -43,9 +43,11 @@ use POSIX;
 use File::Spec;
 use File::Copy;
 use File::Path;
+use File::Temp;
+
 use base 'Exporter';
 
-use version; our $VERSION = "1.040";
+use version; our $VERSION = "1.041";
 our @EXPORT = qw(
   is_handle
   reset_handle
@@ -54,6 +56,7 @@ our @EXPORT = qw(
   file_write
   file_copy
   file_move
+  file_temp
   dir_create
   dir_delete
   dir_read
@@ -268,7 +271,6 @@ sub file_copy {
 	}
 }
 
-
 #***********************************************************************
 
 =item B<file_move($in_file, $out_file)> - move file
@@ -295,6 +297,29 @@ sub file_move {
 	} else {
 		return undef;
 	}
+}
+
+#***********************************************************************
+
+=item B<file_temp($dir)> - create temporary file
+
+Creates new temp file and return its handle
+
+=cut 
+
+#-----------------------------------------------------------------------
+
+sub file_temp {
+
+	my ($dir) = @_;
+
+	my %params = ();
+	if ($dir) { $params{DIR} = $dir; }
+
+	my $fh = File::Temp->new(%params);
+
+	return $fh;
+
 }
 
 #***********************************************************************

@@ -47,6 +47,7 @@ my $build = Module::Build->new(
 		'File::Copy'    => '0',
 		'File::Path'    => '0',
 		'File::Spec'    => '0',
+		'File::Temp'    => '0',
 		'HTTP::Date'    => '0',
 		'IO::File'      => '0',
 		'MIME::Base64'  => '0',

@@ -29,7 +29,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = "1.040";
+use version; our $VERSION = "1.041";
 
 our @EXPORT = qw(
   dump_to_string

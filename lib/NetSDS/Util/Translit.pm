@@ -7,7 +7,7 @@
 #         NOTE:  This module ported from Wono framework "as is"
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.040
+#      VERSION:  1.041
 #      CREATED:  03.08.2008 15:04:22 EEST
 #===============================================================================
 
@@ -42,7 +42,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.040';
+use version; our $VERSION = '1.041';
 
 use NetSDS::Const;
 use NetSDS::Util::String;

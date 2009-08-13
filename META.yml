@@ -1,12 +1,12 @@
 ---
 name: NetSDS-Util
-version: 1.040
+version: 1.041
 author:
   - 'Net.Style Development Team <info@netstyle.com.ua>'
 abstract: Utility Perl5 modules for NetSDS VAS development framework
 license: gpl
 resources:
-  license: http://opensource.org/licenses/gpl-license.php
+  license: http://www.opensource.org/licenses/gpl-license.php
 requires:
   Data::UUID: 0
   Date::Format: 0
@@ -15,6 +15,7 @@ requires:
   File::Copy: 0
   File::Path: 0
   File::Spec: 0
+  File::Temp: 0
   Getopt::Long: 0
   HTTP::Date: 0
   IO::File: 0
@@ -38,32 +39,32 @@ build_requires:
 provides:
   NetSDS::Util:
     file: lib/NetSDS/Util.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::Convert:
     file: lib/NetSDS/Util/Convert.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::DateTime:
     file: lib/NetSDS/Util/DateTime.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::File:
     file: lib/NetSDS/Util/File.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::Misc:
     file: lib/NetSDS/Util/Misc.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::String:
     file: lib/NetSDS/Util/String.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::Struct:
     file: lib/NetSDS/Util/Struct.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::Translit:
     file: lib/NetSDS/Util/Translit.pm
-    version: 1.040
+    version: 1.041
   NetSDS::Util::Types:
     file: lib/NetSDS/Util/Types.pm
-    version: 1.040
-generated_by: Module::Build version 0.3
+    version: 1.041
+generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

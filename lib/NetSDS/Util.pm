@@ -24,6 +24,27 @@ NetSDS::Util - supplementary NetSDS packages
 
 C<NetSDS::Util> modules contains functions useful for everyday tasks.
 
+=over
+
+=item B<NetSDS::Util::Convert> - data format conversions
+
+=item B<NetSDS::Util::DateTime> - processing date and time
+
+=item B<NetSDS::Util::File> - work with files and catalogs
+
+=item B<NetSDS::Util::Misc> - miscelaneous routines
+
+=item B<NetSDS::Util::String> - text and binary strings processing
+
+=item B<NetSDS::Util::Struct> - data structures conversion
+
+=item B<NetSDS::Util::Translit> - transliteration
+
+=item B<NetSDS::Util::Types> - work with data types
+
+
+=back
+
 =cut
 
 package NetSDS::Util;
@@ -32,7 +53,7 @@ use 5.8.0;
 use strict;
 use warnings;
 
-use version; our $VERSION = "1.040";
+use version; our $VERSION = "1.041";
 
 1;
 
@@ -45,11 +66,13 @@ Unknown yet
 
 =head1 SEE ALSO
 
-None
+L<NetSDS::Util::Convert>, L<NetSDS::Util::DateTime>, L<NetSDS::Util::File>,
+L<NetSDS::Util::Misc>, L<NetSDS::Util::String>, L<NetSDS::Util::Struct>,
+L<NetSDS::Util::Translit>, L<NetSDS::Util::Types>
 
 =head1 TODO
 
-None
+Implement functional tests.
 
 =head1 AUTHOR
 
