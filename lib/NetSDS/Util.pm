@@ -6,7 +6,6 @@
 #
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.0
 #      CREATED:  24.07.2009 09:38:14 UTC
 #===============================================================================
 =head1 NAME
@@ -32,6 +31,8 @@ C<NetSDS::Util> modules contains functions useful for everyday tasks.
 
 =item B<NetSDS::Util::File> - work with files and catalogs
 
+=item B<NetSDS::Util::Spreadsheet> - processing spreadsheet files
+
 =item B<NetSDS::Util::Misc> - miscelaneous routines
 
 =item B<NetSDS::Util::String> - text and binary strings processing
@@ -53,7 +54,7 @@ use 5.8.0;
 use strict;
 use warnings;
 
-use version; our $VERSION = "1.041";
+use version; our $VERSION = "1.044";
 
 1;
 
@@ -66,9 +67,23 @@ Unknown yet
 
 =head1 SEE ALSO
 
-L<NetSDS::Util::Convert>, L<NetSDS::Util::DateTime>, L<NetSDS::Util::File>,
-L<NetSDS::Util::Misc>, L<NetSDS::Util::String>, L<NetSDS::Util::Struct>,
-L<NetSDS::Util::Translit>, L<NetSDS::Util::Types>
+L<NetSDS::Util::Convert>
+
+L<NetSDS::Util::DateTime>
+
+L<NetSDS::Util::File>
+
+L<NetSDS::Util::Spreadsheet>
+
+L<NetSDS::Util::Misc>
+
+L<NetSDS::Util::String>
+
+L<NetSDS::Util::Struct>,
+
+L<NetSDS::Util::Translit>
+
+L<NetSDS::Util::Types>
 
 =head1 TODO
 
@@ -76,7 +91,29 @@ Implement functional tests.
 
 =head1 AUTHOR
 
+Valentyn Solomko <pere@pere.org.ua>
+
 Michael Bochkaryov <misha@rattler.kiev.ua>
+
+Yana Kornienko <yana@netstyle.com.ua>
+
+=head1 LICENSE
+
+Copyright (C) 2008-2009 Michael Bochkaryov
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 =cut
 

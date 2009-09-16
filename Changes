@@ -1,6 +1,13 @@
 TODO: 
 - import XML processing routines
 
+* Wed Sep 16 2009 Michael Bochkaryov <misha@altlinux.ru> 1.044
+- fix annoying requirements to main NetSDS packages
+
+* Tue Sep 15 2009 Michael Bochkaryov <misha@altlinux.ru> 1.043
+- fix tmpnam() function redefine in file utilities
+- add ImportFile.pm module for spreadsheets parsing
+
 * Fri Jul 24 2009 Michael Bochkaryov <misha@altlinux.ru> 1.040
 - changed version to be compatible with ALT Linux autoprovides
 - drop Base64 strings separation into lines

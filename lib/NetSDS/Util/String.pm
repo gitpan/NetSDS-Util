@@ -7,7 +7,7 @@
 #         NOTE:  This module ported from Wono framework
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.041
+#      VERSION:  1.044
 #      CREATED:  03.08.2008 15:04:22 EEST
 #===============================================================================
 
@@ -43,9 +43,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.041';
-
-use NetSDS::Const;
+use version; our $VERSION = '1.044';
 
 our @EXPORT = qw(
   str_encode
@@ -70,6 +68,8 @@ use Encode qw(
 );
 
 my $BLANK = "[:blank:][:space:][:cntrl:]";
+
+use constant DEFAULT_ENCODING => 'UTF-8';
 
 #***********************************************************************
 #

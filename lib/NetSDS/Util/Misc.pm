@@ -7,7 +7,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.041
+#      VERSION:  1.044
 #      CREATED:  17.08.2008 17:01:48 EEST
 #===============================================================================
 
@@ -33,7 +33,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.041';
+use version; our $VERSION = '1.044';
 
 our @EXPORT = qw(
   cmp_version
@@ -41,6 +41,7 @@ our @EXPORT = qw(
   get_cli
   make_uuid
   csv_num
+  format_msisdn
 );
 
 use Getopt::Long;
@@ -70,7 +71,7 @@ sub cmp_version {
 
 =item B<usage(...)> - print C<usage> text
 
-This function is wapper to L<Pod::Usage> module
+This function is wapper to L<Pod::Usage> module printing POD to STDERR.
 
 =cut
 
@@ -136,7 +137,6 @@ sub make_uuid {
 
 }
 
-
 #***********************************************************************
 
 =item B<csv_num($num)> - format number for CSV 
@@ -156,7 +156,33 @@ sub csv_num {
 	return $num;
 }
 
+#***********************************************************************
+
+=item B<format_msisdn($msisdn)> - format MSISDN
+
+Paramters: phone number 
+
+Returns: well formed MSISDN without leading +.
+
+=cut 
+
 #-----------------------------------------------------------------------
+
+sub format_msisdn {
+
+	my ($msisdn) = @_;
+
+	$msisdn =~ s/[\-\(\)\.\s]//g;
+
+	if ( $msisdn =~ /^\+?(\d{12})$/ ) {
+		return $1;
+	} elsif ( $msisdn =~ /^\s*(\d{9,12})\s*$/ ) {
+		return "380" . substr( $msisdn, length($1) - 9, 9 );
+	} else {
+		return undef;
+	}
+
+}
 
 #**************************************************************************
 1;

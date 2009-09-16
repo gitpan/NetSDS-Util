@@ -7,7 +7,6 @@
 #        NOTES:  ---
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.041
 #      CREATED:  17.08.2008 17:01:48 EEST
 #===============================================================================
 
@@ -45,7 +44,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.041';
+use version; our $VERSION = '1.044';
 
 our @EXPORT = qw(
   conv_str_bcd

@@ -29,7 +29,7 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = "1.041";
+use version; our $VERSION = "1.044";
 
 our @EXPORT = qw(
   dump_to_string
@@ -44,7 +44,6 @@ use Scalar::Util qw(
   reftype
 );
 
-#use NetSDS::Const;
 
 #***********************************************************************
 

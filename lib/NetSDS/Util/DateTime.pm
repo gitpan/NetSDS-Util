@@ -6,7 +6,6 @@
 #
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.041
 #      CREATED:  25.04.2008 15:55:01 EEST
 #===============================================================================
 
@@ -34,7 +33,7 @@ use warnings;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.041';
+use version; our $VERSION = '1.044';
 
 our @EXPORT = qw(
   date_now_array
@@ -42,6 +41,7 @@ our @EXPORT = qw(
   date_now_iso8601
   date_strip
   date_date
+  date_time
   time_from_string
   date_from_string
   date_inc
@@ -149,6 +149,27 @@ sub date_date {
 
 	return $date;
 }
+#***********************************************************************
+
+=item B<date_time(DATE)>
+
+Trim date part from date.
+
+=cut
+
+#-----------------------------------------------------------------------
+
+sub date_time { 
+	my ($date) = @_; 
+
+	unless ( defined ($date) ) { 
+		return undef; 
+	}
+
+	my ($dateonly, $time) = split (/ /, $date); 
+
+	return $time; 
+} 
 
 #***********************************************************************
 

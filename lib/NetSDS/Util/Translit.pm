@@ -7,7 +7,7 @@
 #         NOTE:  This module ported from Wono framework "as is"
 #       AUTHOR:  Michael Bochkaryov (Rattler), <misha@rattler.kiev.ua>
 #      COMPANY:  Net.Style
-#      VERSION:  1.041
+#      VERSION:  1.044
 #      CREATED:  03.08.2008 15:04:22 EEST
 #===============================================================================
 
@@ -42,15 +42,21 @@ use strict;
 
 use base 'Exporter';
 
-use version; our $VERSION = '1.041';
+use version; our $VERSION = '1.044';
 
-use NetSDS::Const;
 use NetSDS::Util::String;
 
 our @EXPORT = qw(
   trans_cyr_lat
   trans_lat_cyr
 );
+
+use constant LANG_BE => 'be';
+use constant LANG_EN => 'en';
+use constant LANG_RU => 'ru';
+use constant LANG_UK => 'uk';
+
+use constant DEFAULT_LANG     => LANG_RU;
 
 my %PREP = (
 	LANG_RU() => {
