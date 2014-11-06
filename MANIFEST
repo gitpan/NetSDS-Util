@@ -16,3 +16,4 @@ META.yml
 t/01_load.t
 t/02_pod.t
 t/03_pod_coverage.t
+META.json

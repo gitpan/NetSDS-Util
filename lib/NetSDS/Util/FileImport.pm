@@ -5,6 +5,7 @@ NetSDS::Util::FileImport - import table structure from file
 
 =head1 SYNOPSIS
 
+use NetSDS::Util::FileImport
 
 =head1 DESCRIPTION
 
@@ -48,6 +49,8 @@ Depends of a params parse would be different
 
 Returns a structure like this 
 	[ { last_name => undef, first_name => yana, ... }, { last_name => kornienko, first_name => test, ... } .. ]
+
+=back
 
 =cut 
 

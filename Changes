@@ -1,6 +1,9 @@
 TODO: 
 - import XML processing routines
 
+* Thu Nov 6 2014 Michael Bochkaryov <misha@altlinux.ru> 1.045
+- minor POD fix (thanks to Gregor Herrmann and other guys from Debian)
+
 * Wed Sep 16 2009 Michael Bochkaryov <misha@altlinux.ru> 1.044
 - fix annoying requirements to main NetSDS packages
 
